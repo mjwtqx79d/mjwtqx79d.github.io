@@ -1,0 +1,1344 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>酒色91 - 官方视频门户|原创精品内容与创作者社区</title>
+<meta name="description" content="酒色91官方网站，专注原创高清视频内容与创作者社区，深耕多元影像表达，打造值得信赖的品牌内容生态与企业级视频门户。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317132a'/%3E%3Ccircle cx='24' cy='22' r='7' fill='%23ff8a5c'/%3E%3Cpath d='M14 48c0-9 8-14 18-14s18 5 18 14z' fill='%23e05c7a'/%3E%3Cpath d='M40 14l12 6-12 6z' fill='%23ffd35c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --js91-ink:#1d1325;
+  --js91-ink-soft:#4a3a55;
+  --js91-bg:#fbf6f2;
+  --js91-panel:#ffffff;
+  --js91-amber:#e8842c;
+  --js91-amber-deep:#c25f14;
+  --js91-rose:#d64e6e;
+  --js91-cream:#fdefe0;
+  --js91-line:#ecd9cb;
+  --js91-shadow:0 10px 30px rgba(74,42,18,.10);
+  --js91-radius:16px;
+  --js91-sticky:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--js91-sticky)}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--js91-ink);
+  background:var(--js91-bg);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{line-height:1.3;margin:0}
+p{margin:0 0 .9em}
+button{font-family:inherit;cursor:pointer}
+
+/* ===== S1 公告条 + 页头 ===== */
+.js91-stickybar{position:sticky;top:0;z-index:50}
+.js91-notice{
+  background:linear-gradient(90deg,#3a1d3f,#7d2b46 55%,#b1452f);
+  color:#fff3e8;font-size:13px;
+  display:flex;align-items:center;gap:10px;
+  padding:8px 18px;
+  overflow:hidden;
+}
+.js91-notice-badge{
+  flex:0 0 auto;background:var(--js91-amber);color:#2a1305;
+  font-weight:700;font-size:11px;letter-spacing:.08em;
+  padding:2px 8px;border-radius:99px;
+}
+.js91-notice-track{flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.js91-notice-track b{color:#ffd9a3}
+.js91-header{
+  background:rgba(251,246,242,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--js91-line);
+}
+.js91-header-in{
+  max-width:1180px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:18px;
+}
+.js91-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.js91-brand-mark{
+  width:40px;height:40px;border-radius:12px;
+  background:conic-gradient(from 200deg,#e8842c,#d64e6e,#7d2b46,#e8842c);
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;
+  box-shadow:0 4px 12px rgba(214,78,110,.35);
+}
+.js91-brand-name{font-weight:800;font-size:19px;letter-spacing:.02em}
+.js91-brand-sub{display:block;font-size:11px;font-weight:500;color:var(--js91-ink-soft);letter-spacing:.14em}
+.js91-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.js91-nav a{
+  padding:7px 12px;border-radius:99px;font-size:14px;color:var(--js91-ink-soft);
+  transition:background .2s,color .2s;
+}
+.js91-nav a:hover,.js91-nav a:focus-visible{background:var(--js91-cream);color:var(--js91-amber-deep)}
+.js91-search{
+  display:flex;align-items:center;gap:6px;background:#fff;
+  border:1px solid var(--js91-line);border-radius:99px;padding:4px 4px 4px 14px;
+  min-width:0;
+}
+.js91-search input{
+  border:0;outline:0;background:transparent;font-size:14px;width:150px;color:var(--js91-ink);
+}
+.js91-search button{
+  border:0;background:var(--js91-ink);color:#fff;border-radius:99px;
+  padding:6px 14px;font-size:13px;
+}
+.js91-search button:hover{background:var(--js91-rose)}
+.js91-burger{
+  display:none;border:1px solid var(--js91-line);background:#fff;border-radius:10px;
+  width:40px;height:40px;font-size:18px;line-height:1;
+}
+.js91-search-feedback{
+  max-width:1180px;margin:0 auto;padding:0 20px 10px;
+  font-size:13px;color:var(--js91-amber-deep);min-height:0;
+}
+.js91-search-feedback:not(:empty){
+  padding-bottom:12px;
+}
+@media (max-width:900px){
+  .js91-nav{
+    display:none;width:100%;order:5;flex-direction:column;gap:2px;
+    padding:6px 0 2px;border-top:1px dashed var(--js91-line);margin-top:4px;
+  }
+  .js91-nav.js91-open{display:flex}
+  .js91-header-in{flex-wrap:wrap;gap:10px}
+  .js91-search{order:4;flex:1 1 100%}
+  .js91-search input{width:100%;flex:1 1 auto}
+  .js91-burger{display:block;margin-left:auto}
+}
+@media (min-width:901px){.js91-burger{display:none}}
+
+/* ===== 通用布局 ===== */
+.js91-wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.js91-section{padding:52px 0}
+.js91-section + .js91-section{border-top:1px solid var(--js91-line)}
+.js91-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--js91-amber-deep);
+  text-transform:uppercase;margin-bottom:10px;
+}
+.js91-eyebrow::before{content:"";width:22px;height:2px;background:var(--js91-amber)}
+.js91-h2{font-size:clamp(24px,3vw,32px);font-weight:800;letter-spacing:.01em}
+.js91-h2 em{font-style:normal;color:var(--js91-rose)}
+.js91-lead{color:var(--js91-ink-soft);max-width:62ch;margin-top:10px}
+.js91-grid{display:grid;gap:20px;min-width:0}
+.js91-grid > *{min-width:0}
+
+/* ===== S2 首屏 6:4 大幅图文 ===== */
+.js91-hero{padding:44px 0 56px;background:
+  radial-gradient(1000px 420px at 80% -10%,#ffe6cf 0%,transparent 60%),
+  linear-gradient(180deg,#fff6ec,var(--js91-bg) 70%);}
+.js91-hero-grid{display:grid;grid-template-columns:6fr 4fr;gap:38px;align-items:center}
+.js91-hero h1{
+  font-size:clamp(36px,5.4vw,62px);font-weight:900;letter-spacing:-.01em;
+  line-height:1.08;margin:6px 0 14px;
+}
+.js91-hero h1 span{
+  background:linear-gradient(90deg,#e8842c,#d64e6e);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.js91-hero-tag{
+  display:inline-block;background:#fff;border:1px solid var(--js91-line);
+  border-radius:99px;padding:4px 12px;font-size:12px;color:var(--js91-amber-deep);
+  font-weight:700;letter-spacing:.06em;
+}
+.js91-hero-desc{font-size:16px;color:var(--js91-ink-soft);max-width:56ch}
+.js91-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 26px}
+.js91-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:99px;
+  padding:11px 22px;font-size:14.5px;font-weight:700;border:1px solid transparent;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.js91-btn-primary{background:var(--js91-ink);color:#fff;box-shadow:0 8px 20px rgba(29,19,37,.22)}
+.js91-btn-primary:hover{transform:translateY(-2px);background:#2c1e38}
+.js91-btn-ghost{background:#fff;color:var(--js91-ink);border-color:var(--js91-line)}
+.js91-btn-ghost:hover{border-color:var(--js91-amber);color:var(--js91-amber-deep)}
+.js91-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.js91-stat{
+  background:#fff;border:1px solid var(--js91-line);border-radius:14px;
+  padding:12px 14px;
+}
+.js91-stat b{display:block;font-size:22px;font-weight:800;color:var(--js91-ink)}
+.js91-stat span{font-size:12px;color:var(--js91-ink-soft)}
+.js91-hero-visual{position:relative}
+.js91-hero-figure{
+  border-radius:22px;overflow:hidden;box-shadow:0 24px 50px rgba(120,60,20,.22);
+  border:1px solid #f2dcc8;background:#fff;aspect-ratio:4/5;
+}
+.js91-hero-figure img{width:100%;height:100%;object-fit:cover;display:block}
+.js91-hero-chip{
+  position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:14px;
+  padding:10px 16px;box-shadow:var(--js91-shadow);border:1px solid var(--js91-line);
+  font-size:13px;font-weight:700;color:var(--js91-rose);
+}
+.js91-hero-chip small{display:block;font-weight:500;color:var(--js91-ink-soft);font-size:11px}
+@media (max-width:860px){
+  .js91-hero-grid{grid-template-columns:1fr;gap:26px}
+  .js91-hero-figure{aspect-ratio:16/10}
+  .js91-hero-chip{left:10px;bottom:10px}
+}
+
+/* ===== 视频列表样式 ===== */
+.js91-vcard{
+  background:#fff;border:1px solid var(--js91-line);border-radius:var(--js91-radius);
+  overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;
+}
+.js91-vcard:hover{transform:translateY(-4px);box-shadow:var(--js91-shadow)}
+.js91-vthumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#2a1b33}
+.js91-vthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.js91-vplay{
+  position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:34px;
+  background:linear-gradient(180deg,transparent 40%,rgba(20,8,26,.55));
+  opacity:0;transition:opacity .2s;
+}
+.js91-vcard:hover .js91-vplay{opacity:1}
+.js91-vdur{
+  position:absolute;right:10px;bottom:10px;background:rgba(20,8,26,.78);color:#fff;
+  font-size:11px;padding:2px 8px;border-radius:99px;letter-spacing:.04em;
+}
+.js91-vbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.js91-vtitle{font-size:16.5px;font-weight:800}
+.js91-vsum{font-size:13.5px;color:var(--js91-ink-soft);margin:0}
+.js91-vtags{display:flex;gap:6px;flex-wrap:wrap}
+.js91-tag{
+  font-size:11.5px;background:var(--js91-cream);color:var(--js91-amber-deep);
+  padding:2px 9px;border-radius:99px;font-weight:600;
+}
+.js91-tag.js91-tag-rose{background:#fde6ec;color:var(--js91-rose)}
+.js91-vmeta{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:12px;color:var(--js91-ink-soft);margin-top:auto;padding-top:8px;
+  border-top:1px dashed var(--js91-line);
+}
+.js91-vmeta .js91-author{font-weight:700;color:var(--js91-ink)}
+.js91-vactions{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.js91-mini{
+  border:1px solid var(--js91-line);background:#fff;border-radius:99px;
+  font-size:12px;padding:4px 12px;color:var(--js91-ink-soft);
+  display:inline-flex;align-items:center;gap:5px;transition:all .18s;
+}
+.js91-mini:hover{border-color:var(--js91-amber);color:var(--js91-amber-deep)}
+.js91-mini.js91-on{background:#fde6ec;border-color:var(--js91-rose);color:var(--js91-rose);font-weight:700}
+.js91-mini.js91-liked{background:#fff0e0;border-color:var(--js91-amber);color:var(--js91-amber-deep);font-weight:700}
+
+/* 文字版视频条目 */
+.js91-vrow{
+  display:grid;grid-template-columns:56px 1fr auto;gap:14px;align-items:start;
+  padding:16px 0;border-bottom:1px solid var(--js91-line);
+}
+.js91-vrow:last-child{border-bottom:0}
+.js91-vrow-no{
+  font-size:22px;font-weight:900;color:#e8cbb4;line-height:1;padding-top:4px;
+  font-variant-numeric:tabular-nums;
+}
+.js91-vrow h4{font-size:15.5px;font-weight:800;margin-bottom:4px}
+.js91-vrow p{font-size:13px;color:var(--js91-ink-soft);margin:0}
+.js91-vrow-side{text-align:right;font-size:12px;color:var(--js91-ink-soft);white-space:nowrap}
+@media (max-width:640px){
+  .js91-vrow{grid-template-columns:40px 1fr;gap:10px}
+  .js91-vrow-side{grid-column:2;text-align:left;padding-top:4px}
+}
+
+/* 三列卡片 */
+.js91-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.js91-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:900px){.js91-cols-3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.js91-cols-3,.js91-cols-2{grid-template-columns:1fr}}
+
+/* 焦点大图 + 侧列表 */
+.js91-focus-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;min-width:0}
+.js91-focus-grid > *{min-width:0}
+@media (max-width:860px){.js91-focus-grid{grid-template-columns:1fr}}
+.js91-spotlight{
+  background:#fff;border:1px solid var(--js91-line);border-radius:20px;overflow:hidden;
+  box-shadow:var(--js91-shadow);
+}
+.js91-spotlight-media{aspect-ratio:16/10;position:relative}
+.js91-spotlight-media img{width:100%;height:100%;object-fit:cover;display:block}
+.js91-spotlight-media .js91-vdur{font-size:12px}
+.js91-spotlight-body{padding:18px 22px 22px}
+.js91-spotlight-body h3{font-size:21px;font-weight:800;margin-bottom:8px}
+
+/* ===== 专题 ===== */
+.js91-topic{
+  background:#fff;border:1px solid var(--js91-line);border-radius:var(--js91-radius);
+  padding:18px 20px;display:flex;flex-direction:column;gap:10px;
+}
+.js91-topic-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.js91-topic-head h3{font-size:17px;font-weight:800}
+.js91-status{font-size:11.5px;font-weight:700;padding:2px 10px;border-radius:99px;white-space:nowrap}
+.js91-status-live{background:#e6f6ec;color:#1a7a45}
+.js91-status-wip{background:#fff2dc;color:#a56800}
+.js91-topic ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.js91-topic li{font-size:13.5px;color:var(--js91-ink-soft);padding-left:16px;position:relative}
+.js91-topic li::before{content:"▸";position:absolute;left:0;color:var(--js91-amber)}
+.js91-topic p{font-size:13px;color:var(--js91-ink-soft);margin:0}
+
+/* ===== 品牌故事 / 时间线 ===== */
+.js91-timeline{position:relative;margin-top:24px;padding-left:22px;border-left:2px solid var(--js91-line)}
+.js91-tl-item{position:relative;padding:0 0 26px 18px}
+.js91-tl-item::before{
+  content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:var(--js91-amber);border:3px solid var(--js91-bg);box-shadow:0 0 0 2px var(--js91-amber);
+}
+.js91-tl-year{font-weight:800;color:var(--js91-rose);font-size:14px;letter-spacing:.06em}
+.js91-tl-item h3{font-size:17px;font-weight:800;margin:2px 0 4px}
+.js91-tl-item p{font-size:14px;color:var(--js91-ink-soft);margin:0}
+
+/* ===== 作者区 双列简介 ===== */
+.js91-authors{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){.js91-authors{grid-template-columns:1fr}}
+.js91-author-card{
+  background:#fff;border:1px solid var(--js91-line);border-radius:var(--js91-radius);
+  padding:18px 20px;display:grid;grid-template-columns:64px 1fr;gap:16px;
+  transition:box-shadow .2s,transform .2s;
+}
+.js91-author-card:hover{box-shadow:var(--js91-shadow);transform:translateY(-2px)}
+.js91-avatar{
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:22px;color:#fff;letter-spacing:0;
+}
+.js91-author-card h3{font-size:16.5px;font-weight:800;margin-bottom:2px}
+.js91-author-role{font-size:12.5px;color:var(--js91-amber-deep);font-weight:700;margin-bottom:6px}
+.js91-author-card p{font-size:13px;color:var(--js91-ink-soft);margin:0 0 8px}
+.js91-author-meta{display:flex;gap:14px;font-size:12px;color:var(--js91-ink-soft);flex-wrap:wrap}
+.js91-author-meta b{color:var(--js91-ink)}
+
+/* ===== 评论区 双列短评 ===== */
+.js91-comments{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.js91-comments{grid-template-columns:1fr}}
+.js91-comment{
+  background:#fff;border:1px solid var(--js91-line);border-radius:14px;padding:14px 16px;
+  display:flex;flex-direction:column;gap:6px;
+}
+.js91-comment-top{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700}
+.js91-comment-dot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:11px}
+.js91-comment time{margin-left:auto;font-weight:400;color:var(--js91-ink-soft);font-size:11.5px}
+.js91-comment p{font-size:13.5px;margin:0;color:var(--js91-ink)}
+.js91-comment .js91-stars{font-size:12px;color:var(--js91-amber);letter-spacing:2px}
+
+/* ===== 图文索引 ===== */
+.js91-index-list{display:grid;gap:14px;margin-top:22px}
+.js91-index-item{
+  display:grid;grid-template-columns:150px 1fr;gap:16px;background:#fff;
+  border:1px solid var(--js91-line);border-radius:14px;overflow:hidden;
+  transition:box-shadow .2s;
+}
+.js91-index-item:hover{box-shadow:var(--js91-shadow)}
+.js91-index-media{aspect-ratio:4/3}
+.js91-index-media img{width:100%;height:100%;object-fit:cover;display:block}
+.js91-index-body{padding:14px 16px 14px 0}
+.js91-index-body h3{font-size:16px;font-weight:800;margin-bottom:4px}
+.js91-index-body p{font-size:13px;color:var(--js91-ink-soft);margin:0 0 6px}
+@media (max-width:640px){
+  .js91-index-item{grid-template-columns:1fr}
+  .js91-index-media{aspect-ratio:16/9}
+  .js91-index-body{padding:0 16px 14px}
+}
+
+/* ===== 深度解析文字区 ===== */
+.js91-essay{
+  background:#fff;border:1px solid var(--js91-line);border-radius:20px;
+  padding:30px 34px;box-shadow:var(--js91-shadow);
+}
+@media (max-width:640px){.js91-essay{padding:22px 20px}}
+.js91-essay h3{margin-top:22px;font-size:19px;font-weight:800;color:var(--js91-amber-deep)}
+.js91-essay h3:first-child{margin-top:0}
+.js91-essay p{font-size:14.5px;color:#3c2c46}
+.js91-essay blockquote{
+  margin:18px 0;padding:14px 18px;border-left:4px solid var(--js91-rose);
+  background:#fdf3ec;border-radius:0 12px 12px 0;font-size:14px;color:#5a3a4a;
+}
+.js91-essay blockquote b{color:var(--js91-rose)}
+
+/* ===== 数据榜单 ===== */
+.js91-rank{
+  background:#fff;border:1px solid var(--js91-line);border-radius:var(--js91-radius);
+  padding:16px 18px;
+}
+.js91-rank h3{font-size:15.5px;font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.js91-rank h3 span{font-size:11px;color:#fff;background:var(--js91-rose);padding:1px 8px;border-radius:99px;font-weight:700}
+.js91-rank ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.js91-rank li{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;font-size:13.5px}
+.js91-rank li b{color:var(--js91-amber-deep);font-size:13px;font-weight:800}
+.js91-rank li small{color:var(--js91-ink-soft);font-size:11.5px}
+
+/* ===== 企业动态 ===== */
+.js91-news{display:grid;gap:0;margin-top:20px}
+.js91-news-item{
+  display:grid;grid-template-columns:96px 1fr;gap:16px;padding:15px 0;
+  border-bottom:1px dashed var(--js91-line);
+}
+.js91-news-item:last-child{border-bottom:0}
+.js91-news-date{font-size:12.5px;color:var(--js91-amber-deep);font-weight:700;letter-spacing:.04em}
+.js91-news-item h3{font-size:15.5px;font-weight:800;margin-bottom:2px}
+.js91-news-item p{font-size:13px;color:var(--js91-ink-soft);margin:0}
+
+/* ===== 合作墙 ===== */
+.js91-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}
+@media (max-width:760px){.js91-partners{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.js91-partner{
+  background:#fff;border:1px solid var(--js91-line);border-radius:12px;
+  padding:16px 12px;text-align:center;font-weight:800;font-size:14px;color:var(--js91-ink-soft);
+  letter-spacing:.04em;
+}
+.js91-partner span{display:block;font-size:11px;font-weight:500;color:#a58a78;margin-top:2px}
+
+/* ===== FAQ ===== */
+.js91-faq{margin-top:22px;display:grid;gap:10px}
+.js91-faq details{
+  background:#fff;border:1px solid var(--js91-line);border-radius:12px;
+  padding:13px 18px;
+}
+.js91-faq summary{
+  font-weight:700;font-size:14.5px;cursor:pointer;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.js91-faq summary::-webkit-details-marker{display:none}
+.js91-faq summary::after{content:"+";font-size:20px;color:var(--js91-amber);font-weight:400;line-height:1}
+.js91-faq details[open] summary::after{content:"−"}
+.js91-faq details p{font-size:13.5px;color:var(--js91-ink-soft);margin:10px 0 0}
+
+/* ===== 投稿 CTA ===== */
+.js91-cta{
+  background:linear-gradient(120deg,#2a1b33,#7d2b46 70%,#c25f14);
+  color:#fff6ec;border-radius:22px;padding:34px 36px;display:flex;
+  align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.js91-cta h2{font-size:24px;font-weight:800;margin-bottom:6px}
+.js91-cta p{margin:0;font-size:14px;color:#f3d9c6;max-width:52ch}
+.js91-cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+.js91-cta .js91-btn-primary{background:#fff;color:#3a1d3f}
+.js91-cta .js91-btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.js91-cta .js91-btn-ghost:hover{border-color:#fff;color:#fff}
+
+/* ===== 页脚 ===== */
+.js91-footer{background:#241730;color:#e7d8e4;padding:44px 0 20px;margin-top:10px}
+.js91-footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+@media (max-width:820px){.js91-footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.js91-footer-grid{grid-template-columns:1fr}}
+.js91-footer h4{font-size:14px;font-weight:800;margin-bottom:10px;color:#fff}
+.js91-footer a{color:#cbb6c8;font-size:13px}
+.js91-footer a:hover{color:#ffd9a3}
+.js91-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;font-size:13px}
+.js91-footer-brand{font-weight:900;font-size:20px;margin-bottom:8px}
+.js91-footer-brand small{display:block;font-size:11px;font-weight:500;letter-spacing:.16em;color:#b395ae}
+.js91-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:16px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:#a98fa4;
+}
+
+/* ===== Toast ===== */
+.js91-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#241730;color:#fff;padding:10px 20px;border-radius:99px;font-size:13.5px;
+  opacity:0;pointer-events:none;transition:all .25s;z-index:200;box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+.js91-toast.js91-show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.js91-modal{
+  position:fixed;inset:0;background:rgba(20,10,26,.55);z-index:150;
+  display:none;place-items:center;padding:20px;
+}
+.js91-modal.js91-show{display:grid}
+.js91-modal-card{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:26px 28px;
+  max-height:86vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.35);
+}
+.js91-modal-card h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.js91-modal-card p{font-size:14px;color:var(--js91-ink-soft)}
+.js91-modal-close{
+  float:right;border:0;background:#f5ece5;border-radius:50%;width:30px;height:30px;
+  font-size:16px;color:var(--js91-ink-soft);
+}
+.js91-field{display:block;margin:12px 0;font-size:13px;font-weight:700}
+.js91-field input,.js91-field textarea{
+  display:block;width:100%;margin-top:6px;border:1px solid var(--js91-line);border-radius:10px;
+  padding:9px 12px;font-size:14px;font-family:inherit;font-weight:400;outline:none;
+}
+.js91-field input:focus,.js91-field textarea:focus{border-color:var(--js91-amber)}
+
+/* 回到顶部 */
+.js91-top{
+  position:fixed;right:20px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--js91-ink);color:#fff;border:0;font-size:18px;display:none;
+  z-index:120;box-shadow:0 8px 20px rgba(29,19,37,.3);
+}
+.js91-top.js91-show{display:block}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="js91-stickybar">
+  <div class="js91-notice">
+    <span class="js91-notice-badge">新增</span>
+    <div class="js91-notice-track" id="js91-notice-track">
+      <b>11月22日</b> 官方发布「冬酿影像计划」第三期 · <b>新增</b> 12 支高清原创短片 · <b>上新</b> 创作者「巷口阿岚」作品集 · <b>开放</b> 年度口碑投票 · <b>报名</b> 年末 48 小时创作挑战
+    </div>
+  </div>
+  <header class="js91-header">
+    <div class="js91-header-in">
+      <a class="js91-brand" href="#js91-home" aria-label="酒色91 官方首页">
+        <span class="js91-brand-mark">酒</span>
+        <span class="js91-brand-name">酒色91<span class="js91-brand-sub">OFFICIAL VIDEO PORTAL</span></span>
+      </a>
+      <nav class="js91-nav" id="js91-nav" aria-label="主导航">
+        <a href="#js91-home">首页</a>
+        <a href="#js91-featured">精选视频</a>
+        <a href="#js91-parse">酒色91解析</a>
+        <a href="#js91-topics">专题企划</a>
+        <a href="#js91-creators">创作者</a>
+        <a href="#js91-voices">口碑</a>
+        <a href="#js91-faq">帮助</a>
+      </nav>
+      <form class="js91-search" id="js91-search-form" role="search">
+        <input id="js91-search-input" type="search" placeholder="搜索酒色91的短片、创作者、专题" aria-label="站内搜索">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="js91-burger" id="js91-burger" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+    <div class="js91-search-feedback" id="js91-search-feedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<!-- S2 品牌首屏 6:4 -->
+<section class="js91-hero" id="js91-home">
+  <div class="js91-wrap js91-hero-grid">
+    <div>
+      <span class="js91-hero-tag">官方网站 · 企业级视频门户</span>
+      <h1>酒色91</h1>
+      <p class="js91-hero-desc">
+        酒色91 是深耕原创影像与生活美学领域的视频品牌官网。我们把镜头对准真实的日常、微醺的情绪与城市的夜色，为企业与创作者搭建高品质内容生态。官方发布的高清精品持续更新，陪伴每一次观看。
+      </p>
+      <div class="js91-hero-actions">
+        <a class="js91-btn js91-btn-primary" href="#js91-featured">进入精选片单</a>
+        <a class="js91-btn js91-btn-ghost" href="#js91-creators">认识创作者</a>
+        <a class="js91-btn js91-btn-ghost" href="#js91-submit" id="js91-hero-submit">我要投稿</a>
+      </div>
+      <div class="js91-stats">
+        <div class="js91-stat"><b>3,860+</b><span>官方高清原创短片</span></div>
+        <div class="js91-stat"><b>215 位</b><span>签约与入驻创作者</span></div>
+        <div class="js91-stat"><b>1.2 亿</b><span>累计品质播放量</span></div>
+      </div>
+    </div>
+    <div class="js91-hero-visual">
+      <figure class="js91-hero-figure">
+        <img alt="酒色91首屏主视觉:暖黄灯光下的吧台与举杯的人群剪影" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 600'%3E%3Cdefs%3E%3ClinearGradient id='bg1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23241530'/%3E%3Cstop offset='.55' stop-color='%235b2540'/%3E%3Cstop offset='1' stop-color='%23a8502a'/%3E%3C/linearGradient%3E%3CradialGradient id='lamp1' cx='.5' cy='.3' r='.55'%3E%3Cstop offset='0' stop-color='%23ffd489' stop-opacity='.95'/%3E%3Cstop offset='1' stop-color='%23ffd489' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='480' height='600' fill='url(%23bg1)'/%3E%3Ccircle cx='240' cy='170' r='210' fill='url(%23lamp1)'/%3E%3Crect x='0' y='420' width='480' height='180' fill='%231d1024' opacity='.85'/%3E%3Cg fill='%23140a18'%3E%3Ccircle cx='120' cy='360' r='30'/%3E%3Cpath d='M76 470c0-30 20-52 44-52s44 22 44 52z'/%3E%3Ccircle cx='300' cy='346' r='34'/%3E%3Cpath d='M250 470c0-34 22-58 50-58s50 24 50 58z'/%3E%3Ccircle cx='408' cy='372' r='26'/%3E%3Cpath d='M370 470c0-26 17-45 38-45s38 19 38 45z'/%3E%3C/g%3E%3Cg stroke='%23ffcf87' stroke-width='4' fill='none' opacity='.95'%3E%3Cpath d='M104 400h32l-4 42h-24z'/%3E%3Cpath d='M286 388h32l-4 42h-24z'/%3E%3C/g%3E%3Cg fill='%23ffd9a3' opacity='.9'%3E%3Ccircle cx='150' cy='250' r='4'/%3E%3Ccircle cx='344' cy='230' r='3'/%3E%3Ccircle cx='238' cy='286' r='5'/%3E%3Ccircle cx='410' cy='290' r='3'/%3E%3Ccircle cx='70' cy='300' r='3'/%3E%3C/g%3E%3Ccircle cx='240' cy='120' r='26' fill='none' stroke='%23ffc56e' stroke-width='3' opacity='.7'/%3E%3C/svg%3E">
+      </figure>
+      <div class="js91-hero-chip">本周主推《夜醺·巷口》<small>4 分钟 · 原创高清</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 焦点内容 -->
+<section class="js91-section" id="js91-featured">
+  <div class="js91-wrap">
+    <span class="js91-eyebrow">Featured · 焦点推荐</span>
+    <h2 class="js91-h2">酒色91 <em>本期焦点</em>与热门片单</h2>
+    <p class="js91-lead">由官方编辑部与创作者社区共同筛出,聚焦酒色91 品牌下最具影响力的原创影像。每一条都附完整内容信息与互动操作,方便收藏与转载。</p>
+
+    <div class="js91-focus-grid" style="margin-top:26px">
+      <article class="js91-spotlight">
+        <div class="js91-spotlight-media">
+          <img alt="焦点视频《夜醺·巷口》封面上暖色灯箱与老巷酒馆门口" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23221a3d'/%3E%3Cstop offset='.6' stop-color='%23482b52'/%3E%3Cstop offset='1' stop-color='%23b7632e'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd07a'/%3E%3Cstop offset='1' stop-color='%23ff8a4c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23f1)'/%3E%3Cg opacity='.7'%3E%3Crect x='40' y='90' width='140' height='220' fill='%23332642'/%3E%3Crect x='200' y='60' width='120' height='250' fill='%232a1e3a'/%3E%3Crect x='340' y='100' width='150' height='210' fill='%2338294a'/%3E%3C/g%3E%3Crect x='238' y='140' width='120' height='160' rx='6' fill='url(%23glow1)' opacity='.95'/%3E%3Ctext x='298' y='230' font-family='sans-serif' font-size='26' font-weight='700' fill='%233a1d10' text-anchor='middle'%3E酒%3C/text%3E%3Cpath d='M540 300h70v-18l-70-36z' fill='%23ffbe6b' opacity='.85'/%3E%3Cg fill='%23ffe0a8' opacity='.8'%3E%3Ccircle cx='90' cy='70' r='3'/%3E%3Ccircle cx='580' cy='80' r='4'/%3E%3Ccircle cx='470' cy='50' r='3'/%3E%3C/g%3E%3Crect x='0' y='330' width='640' height='70' fill='%23181028' opacity='.9'/%3E%3C/svg%3E">
+          <span class="js91-vdur">04:12</span>
+          <span class="js91-vplay">▶</span>
+        </div>
+        <div class="js91-spotlight-body">
+          <h3>夜醺·巷口:一家开了 17 年的小酒馆</h3>
+          <p>酒色91 官方摄制组跟拍三个夜晚,记录巷口酒馆的老板、常客与一只爱睡在酒箱上的猫。影片采用自然光与原声,呈现城市夜晚最温暖的一层质地。</p>
+          <div class="js91-vtags"><span class="js91-tag">城市探索</span><span class="js91-tag js91-tag-rose">品牌故事</span><span class="js91-tag">在地文化</span></div>
+          <div class="js91-vmeta">
+            <span class="js91-author">酒色91 官方影像</span>
+            <span>播放 128.6 万</span>
+            <span>点赞 9.4 万</span>
+            <span>收藏 3.1 万</span>
+          </div>
+          <div class="js91-vactions">
+            <button class="js91-mini" data-like="1286000">❤ 点赞 <span class="js91-like-count">9.4万</span></button>
+            <button class="js91-mini" data-fav>☆ 收藏</button>
+            <button class="js91-mini" data-copy>⧉ 复制链接</button>
+            <button class="js91-mini" data-share>↗ 分享</button>
+          </div>
+        </div>
+      </article>
+
+      <div>
+        <div class="js91-vrow">
+          <div class="js91-vrow-no">01</div>
+          <div>
+            <h4>一杯热红酒的十二种讲法</h4>
+            <p>从业余到进阶,三种香料配比与温度曲线实测,附可打印的配方卡。</p>
+            <div class="js91-vtags" style="margin-top:6px"><span class="js91-tag">教程干货</span><span class="js91-tag js91-tag-rose">美食烹饪</span></div>
+          </div>
+          <div class="js91-vrow-side">07:32<br>56.2 万播放</div>
+        </div>
+        <div class="js91-vrow">
+          <div class="js91-vrow-no">02</div>
+          <div>
+            <h4>调酒师阿岚的一天:从备冰到打烊</h4>
+            <p>人物访谈与工作实拍交叉剪辑,还原一位女性调酒师的十二小时。</p>
+            <div class="js91-vtags" style="margin-top:6px"><span class="js91-tag">人物访谈</span><span class="js91-tag">日常记录</span></div>
+          </div>
+          <div class="js91-vrow-side">11:08<br>88.9 万播放</div>
+        </div>
+        <div class="js91-vrow">
+          <div class="js91-vrow-no">03</div>
+          <div>
+            <h4>夜色摄影入门:用一盏灯拍出电影感</h4>
+            <p>实景演示单灯布光、色温控制与后期调色思路,新手可复现。</p>
+            <div class="js91-vtags" style="margin-top:6px"><span class="js91-tag">实用技巧</span><span class="js91-tag">光影美学</span></div>
+          </div>
+          <div class="js91-vrow-side">09:41<br>42.7 万播放</div>
+        </div>
+        <div class="js91-vrow">
+          <div class="js91-vrow-no">04</div>
+          <div>
+            <h4>老酒标里的城市记忆</h4>
+            <p>走访三家旧货市场,收集二十枚本地酒标,讲述它们背后的年代。</p>
+            <div class="js91-vtags" style="margin-top:6px"><span class="js91-tag">在地文化</span><span class="js91-tag js91-tag-rose">深度测评</span></div>
+          </div>
+          <div class="js91-vrow-side">13:24<br>31.5 万播放</div>
+        </div>
+        <div class="js91-vrow">
+          <div class="js91-vrow-no">05</div>
+          <div>
+            <h4>深夜电台:一个关于告别的故事</h4>
+            <p>情感故事短片,以声音与空镜为主,适合夜间独自观看。</p>
+            <div class="js91-vtags" style="margin-top:6px"><span class="js91-tag">情感故事</span><span class="js91-tag">治愈影像</span></div>
+          </div>
+          <div class="js91-vrow-side">06:10<br>74.3 万播放</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:38px;font-size:20px;font-weight:800">本周热门视频流</h3>
+    <div class="js91-grid js91-cols-3" style="margin-top:16px">
+      <article class="js91-vcard">
+        <div class="js91-vthumb">
+          <img alt="热门视频《深夜食堂的第六张桌子》封面:暖光餐桌与两碗热汤" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='h1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f6d9b6'/%3E%3Cstop offset='1' stop-color='%23c47a3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23h1)'/%3E%3Crect x='0' y='190' width='480' height='80' fill='%235a3520' opacity='.4'/%3E%3Cg%3E%3Cellipse cx='150' cy='200' rx='62' ry='16' fill='%23fff0dc' opacity='.9'/%3E%3Cellipse cx='150' cy='192' rx='48' ry='10' fill='%23e8a15c'/%3E%3Cellipse cx='320' cy='210' rx='52' ry='14' fill='%23fff0dc' opacity='.85'/%3E%3Cellipse cx='320' cy='203' rx='40' ry='9' fill='%23d98a4a'/%3E%3C/g%3E%3Ccircle cx='380' cy='80' r='40' fill='%23fff3dd' opacity='.5'/%3E%3Crect x='60' y='40' width='12' height='60' fill='%235a3520' opacity='.5'/%3E%3Crect x='52' y='96' width='28' height='8' rx='4' fill='%235a3520' opacity='.5'/%3E%3C/svg%3E">
+          <span class="js91-vdur">08:05</span>
+        </div>
+        <div class="js91-vbody">
+          <h3 class="js91-vtitle">深夜食堂的第六张桌子</h3>
+          <p class="js91-vsum">一家只在夜里营业的小店,和那些总坐在同一位置的人。</p>
+          <div class="js91-vtags"><span class="js91-tag">治愈影像</span><span class="js91-tag js91-tag-rose">美食烹饪</span></div>
+          <div class="js91-vmeta"><span class="js91-author">@夜航小舟</span><span>播放 96.4 万</span></div>
+          <div class="js91-vactions">
+            <button class="js91-mini" data-like="964000">❤ <span class="js91-like-count">7.2万</span></button>
+            <button class="js91-mini" data-fav>☆ 收藏</button>
+            <button class="js91-mini" data-copy>⧉ 复制</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="js91-vcard">
+        <div class="js91-vthumb">
+          <img alt="热门视频《玻璃杯里的四季》封面:四只不同颜色的鸡尾酒杯并排" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23201a2e'/%3E%3Cg%3E%3Cpath d='M60 100h70l-30 60h-10z' fill='%2381d4c0' opacity='.9'/%3E%3Cpath d='M150 100h70l-30 60h-10z' fill='%23f0a04b' opacity='.9'/%3E%3Cpath d='M240 100h70l-30 60h-10z' fill='%23d9688c' opacity='.9'/%3E%3Cpath d='M330 100h70l-30 60h-10z' fill='%239d7be8' opacity='.9'/%3E%3C/g%3E%3Cg stroke='%23f5eadc' stroke-width='3' opacity='.8'%3E%3Cpath d='M95 160v34M185 160v34M275 160v34M365 160v34'/%3E%3C/g%3E%3Cg fill='%23fff8ea' opacity='.55'%3E%3Ccircle cx='90' cy='60' r='3'/%3E%3Ccircle cx='200' cy='40' r='2'/%3E%3Ccircle cx='300' cy='66' r='3'/%3E%3Ccircle cx='400' cy='45' r='2'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="js91-vdur">05:48</span>
+        </div>
+        <div class="js91-vbody">
+          <h3 class="js91-vtitle">玻璃杯里的四季</h3>
+          <p class="js91-vsum">用四种时令风味做一组家庭特调,配方与失败经验一起公开。</p>
+          <div class="js91-vtags"><span class="js91-tag">教程干货</span><span class="js91-tag">生活方式</span></div>
+          <div class="js91-vmeta"><span class="js91-author">@杯中小宇宙</span><span>播放 71.8 万</span></div>
+          <div class="js91-vactions">
+            <button class="js91-mini" data-like="718000">❤ <span class="js91-like-count">5.6万</span></button>
+            <button class="js91-mini" data-fav>☆ 收藏</button>
+            <button class="js91-mini" data-copy>⧉ 复制</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="js91-vcard">
+        <div class="js91-vthumb">
+          <img alt="热门视频《巷子尽头的灯》封面:雨夜小巷与一盏黄灯" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%2317221f'/%3E%3Cpath d='M0 270 L120 90 L120 270Z' fill='%2321302b'/%3E%3Cpath d='M480 270 L330 70 L330 270Z' fill='%231b2924'/%3E%3Ccircle cx='240' cy='110' r='60' fill='%23ffd77a' opacity='.25'/%3E%3Ccircle cx='240' cy='110' r='16' fill='%23ffd77a'/%3E%3Cpath d='M240 126v144' stroke='%23ffd77a' stroke-width='3' opacity='.5'/%3E%3Cg stroke='%238fb8a8' stroke-width='1.5' opacity='.35'%3E%3Cpath d='M40 20l-20 60M120 10l-30 80M300 14l20 70M420 8l-20 76M470 30l-16 60M200 6l10 60'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="js91-vdur">06:22</span>
+        </div>
+        <div class="js91-vbody">
+          <h3 class="js91-vtitle">巷子尽头的灯</h3>
+          <p class="js91-vsum">雨夜随拍短片,记录城市里那些仍亮着灯的小店与守夜人。</p>
+          <div class="js91-vtags"><span class="js91-tag js91-tag-rose">城市探索</span><span class="js91-tag">光影美学</span></div>
+          <div class="js91-vmeta"><span class="js91-author">@慢速快门</span><span>播放 63.1 万</span></div>
+          <div class="js91-vactions">
+            <button class="js91-mini" data-like="631000">❤ <span class="js91-like-count">4.9万</span></button>
+            <button class="js91-mini" data-fav>☆ 收藏</button>
+            <button class="js91-mini" data-copy>⧉ 复制</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析:酒色91解析 -->
+<section class="js91-section" id="js91-parse">
+  <div class="js91-wrap">
+    <span class="js91-eyebrow">Insight · 深度解析</span>
+    <h2 class="js91-h2">酒色91 <em>关键词解析</em>:一个视频品牌如何被慢慢酿成</h2>
+    <p class="js91-lead">以下内容由酒色91 官方内容研究中心撰写,系统解释这个品牌名称的多层意味、内容方法论与社区运营逻辑,帮助新观众与合作伙伴理解官方发布的取向。</p>
+
+    <div class="js91-essay" style="margin-top:24px">
+      <h3>一、从字面到气质:酒色91 的三重命名逻辑</h3>
+      <p>「酒色91」这三个字符的组合并非随意拼贴,而是酒色91 品牌在创立之初就确定的表达方向。第一部分「酒」指向时间与发酵——好内容与好酒一样,需要温度、耐心与恰当的等待,急不来。酒色91 的选片标准里有一条内部共识:宁可在剪辑台上多留三周,也不把半熟的片子推上首页。第二部分「色」指向影像的质感与情绪,是画面里的色温、对比与留白,也是内容里真实的人情味。第三部分「91」是品牌自留的一串数字,它代表官方内容库的初始编号,也像一个坐标,提醒团队每一支短片都要有可追溯的出处与版本。</p>
+      <p>把这三层放在一起,酒色91 的气质就清楚了:它不追求浮夸的爆款叙事,而是坚持「慢一点、真一点、清一点」。这也解释了为什么官网首页的第一屏没有使用密集的弹窗与跳转,而是用一张完整的主视觉与一段克制的导语,先把品牌的呼吸感交到访客手里。对于一家强调品质与口碑的视频品牌来说,首页的节奏就是品牌性格的第一印象。</p>
+
+      <h3>二、内容方法论:原创、高清与可验证的品质</h3>
+      <p>酒色91 的内容体系由三条生产线构成。第一条是官方原创线,由企业自有摄制组完成,主题多围绕城市夜色、手作技艺、饮食文化与人物访谈,平均成片时长六到十二分钟,全部达到高清标准,并在片尾保留完整的制作名单。第二条是签约创作者线,平台与创作者共同开发选题,官方提供设备、场地与后期支持,创作者保留创作主导权。第三条是社区投稿线,任何注册用户都可以通过投稿入口提交作品,经过编辑初审与试映反馈后进入官方片单。三条线共享同一套内容规范:画面稳定、声音清楚、信息真实、来源可查。</p>
+      <p>酒色91 在品质控制上有一套被内部称为「三看」的流程。第一看是粗剪版本,重点看叙事是否立得住,有没有为了漂亮镜头牺牲讲述逻辑;第二看是调色与混音版本,重点看情绪是否统一,声音是否喧宾夺主;第三看是小范围试映,邀请普通观众与创作者各十人,收集真实的观看反馈。只有三看都通过的片子,才会被标记为官方精品内容并进入首页推荐池。这套流程看起来慢,却让酒色91 的完播率长期稳定在同类内容的前列,也让口碑成为品牌最可靠的传播渠道。</p>
+
+      <blockquote><b>官方立场:</b>酒色91 认为,一支短片的真正价值不在于它被播放了多少次,而在于观众是否愿意在结束后停留三秒,回想刚才看到的人与事。</blockquote>
+
+      <h3>三、社区与创作者:内容生态如何持续运转</h3>
+      <p>酒色91 的社区运营遵循「先服务创作者,再服务观众」的顺序。平台为创作者提供四类支持:选题库与行业观察简报,帮助创作者找到值得拍的方向;设备与场地共享计划,降低独立创作的门槛;剪辑与调色工作坊,由官方后期团队每月开课;以及版权与合同咨询,保障原创内容的正当权益。这些支持不收取费用,但要求创作者遵守内容真实与来源标注的约定。酒色91 相信,只有让创作者安心,观众才能看到不敷衍的作品。</p>
+      <p>在观众一侧,酒色91 设计了多种轻量互动:点赞、收藏、短评、评分与投票。每年的年度口碑投票是社区最重要的活动之一,投票结果不设商业加权,完全由用户行为决定,获奖作品会在官网首页获得为期一个月的展示位。此外,平台每季度举办一次限时创作挑战,主题由社区提案、官方确认,优秀作品直接进入签约创作者候选名单。这种机制让内容生态保持流动,也让「持续运营」不只是一句口号,而是可被检验的日常动作。</p>
+
+      <h3>四、品牌的社会责任与长期主义</h3>
+      <p>酒色91 明确把「理性观看、健康生活」写进品牌守则。涉及酒类内容的短片会在片头加入提示,官方不制作、不推荐任何鼓励过量饮酒的内容;线下活动坚持提供无酒精选项;与创作者的合作合同中,也包含对未成年人保护与内容分级的具体条款。酒色91 认为,一个视频品牌的影响力越大,越需要在边界问题上说得清楚。与此同时,平台持续投入在地文化记录计划,为地方手艺人、小店主、社区工作者留下影像档案,这些内容不以流量为目标,却是品牌社会责任最实在的部分。</p>
+      <p>长期主义还体现在技术选择上。酒色91 的官网采用轻量、无第三方追踪的页面架构,尽量把带宽留给画面本身;播放器支持清晰度切换与字幕开关,照顾不同网络环境与观看习惯;所有公开片单都提供文字版摘要,方便在无声环境下阅读。这些细节不显眼,却构成了「用户至上」的具体含义。对一个想要被长久记住的视频品牌而言,真正重要的不是某一次爆发,而是每一次打开官网时,观众都能感到被认真对待。</p>
+    </div>
+  </div>
+</section>
+
+<!-- S4 专题企划 -->
+<section class="js91-section" id="js91-topics">
+  <div class="js91-wrap">
+    <span class="js91-eyebrow">Series · 专题企划</span>
+    <h2 class="js91-h2">酒色91 <em>专题企划</em>:把零散的短片串成线</h2>
+    <p class="js91-lead">专题是酒色91 组织内容的主要方式。每个专题由官方编辑部发起,邀请创作者共同完成,并标注清晰的更新状态。</p>
+
+    <div class="js91-grid js91-cols-2" style="margin-top:24px">
+      <article class="js91-topic">
+        <div class="js91-topic-head">
+          <h3>冬酿影像计划 · 第三期</h3>
+          <span class="js91-status js91-status-live">更新中</span>
+        </div>
+        <p>围绕冬季的饮食、取暖与夜行,记录城市在低温里依然温热的部分。本期共有十二支短片陆续上线。</p>
+        <ul>
+          <li>《一锅汤的六小时》——家庭厨房的慢炖记录</li>
+          <li>《手织围巾的第一针》——手作DIY 教学</li>
+          <li>《清晨五点的早市》——在地文化观察</li>
+        </ul>
+        <div class="js91-vactions">
+          <button class="js91-mini" data-fav>☆ 追更专题</button>
+          <button class="js91-mini" data-share>↗ 分享专题</button>
+        </div>
+      </article>
+
+      <article class="js91-topic">
+        <div class="js91-topic-head">
+          <h3>小店守夜人</h3>
+          <span class="js91-status js91-status-live">更新中</span>
+        </div>
+        <p>走访十家营业到深夜的小店,记录店主、常客与街区的关系。专题强调真实、不摆拍,原声为主。</p>
+        <ul>
+          <li>《巷口酒馆的第十七个冬天》——人物访谈</li>
+          <li>《修表摊的最后一盏灯》——城市探索</li>
+          <li>《凌晨两点的面馆》——日常记录</li>
+        </ul>
+        <div class="js91-vactions">
+          <button class="js91-mini" data-fav>☆ 追更专题</button>
+          <button class="js91-mini" data-share>↗ 分享专题</button>
+        </div>
+      </article>
+
+      <article class="js91-topic">
+        <div class="js91-topic-head">
+          <h3>光影练习册</h3>
+          <span class="js91-status js91-status-wip">筹备中</span>
+        </div>
+        <p>面向新手的影像教程专题,每期一个可复现的小练习,从布光、构图到调色逐步推进。</p>
+        <ul>
+          <li>《单灯也能拍电影感》——实用技巧</li>
+          <li>《阴天怎么拍出层次》——教程干货</li>
+          <li>《手机夜景的三个误区》——深度测评</li>
+        </ul>
+        <div class="js91-vactions">
+          <button class="js91-mini" data-fav>☆ 预约提醒</button>
+          <button class="js91-mini" data-share>↗ 分享专题</button>
+        </div>
+      </article>
+
+      <article class="js91-topic">
+        <div class="js91-topic-head">
+          <h3>一杯之内的世界</h3>
+          <span class="js91-status js91-status-live">更新中</span>
+        </div>
+        <p>以饮品为线索的文化专题,覆盖茶、咖啡与低酒精特调,强调配方公开与理性饮用提示。</p>
+        <ul>
+          <li>《手冲咖啡的水温战争》——教程干货</li>
+          <li>《无酒精特调的四种基底》——生活方式</li>
+          <li>《老茶铺的称重手艺》——在地文化</li>
+        </ul>
+        <div class="js91-vactions">
+          <button class="js91-mini" data-fav>☆ 追更专题</button>
+          <button class="js91-mini" data-share>↗ 分享专题</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌故事时间线 -->
+<section class="js91-section" id="js91-story">
+  <div class="js91-wrap">
+    <span class="js91-eyebrow">Story · 品牌故事</span>
+    <h2 class="js91-h2">酒色91 <em>品牌故事</em>:从一支短片到一片生态</h2>
+    <p class="js91-lead">酒色91 的成长没有戏剧性的转折,更多是一次次把片子做扎实的累积。以下是官方整理的关键节点。</p>
+
+    <div class="js91-timeline">
+      <div class="js91-tl-item">
+        <span class="js91-tl-year">2019</span>
+        <h3>从一间剪辑室开始</h3>
+        <p>三位影像从业者租下城郊一间旧仓库,完成酒色91 的第一支原创短片《打烊之后》,片长九分钟,全部自然光拍摄。</p>
+      </div>
+      <div class="js91-tl-item">
+        <span class="js91-tl-year">2021</span>
+        <h3>官网正式上线</h3>
+        <p>酒色91 官方网站发布,首批上线六十支高清短片,并开放创作者入驻申请,当年签约创作者达到二十八位。</p>
+      </div>
+      <div class="js91-tl-item">
+        <span class="js91-tl-year">2023</span>
+        <h3>建立内容规范与三看流程</h3>
+        <p>官方发布《酒色91 内容规范手册》,确立原创、正版、可查三条底线,并开始执行粗剪、调色、试映的三看流程。</p>
+      </div>
+      <div class="js91-tl-item">
+        <span class="js91-tl-year">2025</span>
+        <h3>社区化运营启动</h3>
+        <p>推出年度口碑投票与季度创作挑战,社区短评与评分体系上线,签约与入驻创作者突破两百位。</p>
+      </div>
+      <div class="js91-tl-item">
+        <span class="js91-tl-year">2026</span>
+        <h3>城市影像档案计划</h3>
+        <p>与多地文化机构合作,为地方手艺人、小店主与社区工作者留下系统性影像档案,已累计完成四十七组记录。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S5 创作者矩阵 双列简介 -->
+<section class="js91-section" id="js91-creators">
+  <div class="js91-wrap">
+    <span class="js91-eyebrow">Creators · 创作者矩阵</span>
+    <h2 class="js91-h2">酒色91 <em>创作者矩阵</em>:让专业的人被看见</h2>
+    <p class="js91-lead">以下为酒色91 官方签约与重点推荐创作者。点击卡片可查看完整档案与代表作品。</p>
+
+    <div class="js91-grid js91-authors" style="margin-top:24px">
+      <article class="js91-author-card">
+        <div class="js91-avatar" style="background:linear-gradient(140deg,#e8842c,#c25f14)">岚</div>
+        <div>
+          <h3>巷口阿岚</h3>
+          <div class="js91-author-role">城市探索 · 人物访谈</div>
+          <p>在本地做调酒师八年,习惯用一支手持相机记录客人的故事。镜头克制,偏爱原声与长镜头,系列作品《夜醺》在酒色91 官网累计播放超过六百万次。</p>
+          <div class="js91-author-meta"><span>作品 <b>46</b></span><span>粉丝 <b>18.4 万</b></span><span>擅长领域 <b>夜行记录</b></span></div>
+        </div>
+      </article>
+
+      <article class="js91-author-card">
+        <div class="js91-avatar" style="background:linear-gradient(140deg,#5d8fd0,#33547e)">舟</div>
+        <div>
+          <h3>夜航小舟</h3>
+          <div class="js91-author-role">治愈影像 · 美食烹饪</div>
+          <p>前纪录片剪辑师,现专注家庭厨房与深夜食堂题材。擅长把寻常食材拍出节奏感,片中很少出现配乐,取而代之的是锅气与碗筷声。更新稳定,被观众称为深夜必看。</p>
+          <div class="js91-author-meta"><span>作品 <b>63</b></span><span>粉丝 <b>27.9 万</b></span><span>擅长领域 <b>厨房日常</b></span></div>
+        </div>
+      </article>
+
+      <article class="js91-author-card">
+        <div class="js91-avatar" style="background:linear-gradient(140deg,#d64e6e,#8c2f4d)">杯</div>
+        <div>
+          <h3>杯中小宇宙</h3>
+          <div class="js91-author-role">教程干货 · 生活方式</div>
+          <p>饮品研发从业者,专注低酒精与无酒精特调的教学内容。每条教程都会公开完整配方、失败版本与成本核算,强调理性饮用提示。栏目《四季特调》在社区口碑稳定。</p>
+          <div class="js91-author-meta"><span>作品 <b>38</b></span><span>粉丝 <b>15.2 万</b></span><span>擅长领域 <b>配方教学</b></span></div>
+        </div>
+      </article>
+
+      <article class="js91-author-card">
+        <div class="js91-avatar" style="background:linear-gradient(140deg,#6fae8a,#2f6a52)">慢</div>
+        <div>
+          <h3>慢速快门</h3>
+          <div class="js91-author-role">光影美学 · 城市探索</div>
+          <p>自由摄影师,长期拍摄雨夜与旧城区。作品多为六到八分钟的影像随笔,强调构图与色温的克制,片中常有大量空镜与街声。曾参与酒色91 城市影像档案计划。</p>
+          <div class="js91-author-meta"><span>作品 <b>52</b></span><span>粉丝 <b>21.6 万</b></span><span>擅长领域 <b>夜景摄影</b></span></div>
+        </div>
+      </article>
+
+      <article class="js91-author-card">
+        <div class="js91-avatar" style="background:linear-gradient(140deg,#9d7be8,#5a3fa0)">灶</div>
+        <div>
+          <h3>晚灶先生</h3>
+          <div class="js91-author-role">美食烹饪 · 手作DIY</div>
+          <p>家宴爱好者,擅长把地方菜与家常做法结合,视频里会完整展示备料、火候与失败补救。坚持不用预制半成品,配方卡可打印下载,是酒色91 收藏率最高的创作者之一。</p>
+          <div class="js91-author-meta"><span>作品 <b>71</b></span><span>粉丝 <b>33.5 万</b></span><span>擅长领域 <b>家常菜谱</b></span></div>
+        </div>
+      </article>
+
+      <article class="js91-author-card">
+        <div class="js91-avatar" style="background:linear-gradient(140deg,#e8a93c,#a86a12)">录</div>
+        <div>
+          <h3>一页录</h3>
+          <div class="js91-author-role">人物访谈 · 行业观察</div>
+          <p>长期从事内容行业研究工作,主张访谈要留白、不要替嘉宾总结。栏目《一页访谈》每期十五分钟,聚焦小店经营者与手艺人,被多家行业媒体转载引用。</p>
+          <div class="js91-author-meta"><span>作品 <b>34</b></span><span>粉丝 <b>12.8 万</b></span><span>擅长领域 <b>深度访谈</b></span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S6 口碑与数据榜单 -->
+<section class="js91-section" id="js91-voices">
+  <div class="js91-wrap">
+    <span class="js91-eyebrow">Voices · 口碑与榜单</span>
+    <h2 class="js91-h2">酒色91 <em>用户口碑</em>与本周数据榜单</h2>
+    <p class="js91-lead">口碑来自真实观看,榜单数据每周一由官方后台统一更新,不含商业加权。</p>
+
+    <div class="js91-grid js91-cols-3" style="margin-top:24px;align-items:start">
+      <div class="js91-rank">
+        <h3>热度榜 <span>TOP</span></h3>
+        <ol>
+          <li><b>01</b><span>夜醺·巷口:一家开了 17 年的小酒馆</span><small>128.6万</small></li>
+          <li><b>02</b><span>深夜食堂的第六张桌子</span><small>96.4万</small></li>
+          <li><b>03</b><span>调酒师阿岚的一天</span><small>88.9万</small></li>
+          <li><b>04</b><span>深夜电台:一个关于告别的故事</span><small>74.3万</small></li>
+          <li><b>05</b><span>玻璃杯里的四季</span><small>71.8万</small></li>
+          <li><b>06</b><span>巷子尽头的灯</span><small>63.1万</small></li>
+        </ol>
+      </div>
+      <div class="js91-rank">
+        <h3>新人榜 <span>NEW</span></h3>
+        <ol>
+          <li><b>01</b><span>晚灶先生 · 家常菜谱</span><small>+4.2万</small></li>
+          <li><b>02</b><span>手作小满 · 手作DIY</span><small>+3.6万</small></li>
+          <li><b>03</b><span>旧唱片屋 · 音乐现场</span><small>+3.1万</small></li>
+          <li><b>04</b><span>阳台种菜记 · 生活方式</span><small>+2.7万</small></li>
+          <li><b>05</b><span>十分钟书房 · 知识科普</span><small>+2.3万</small></li>
+        </ol>
+      </div>
+      <div class="js91-rank">
+        <h3>口碑榜 <span>评分</span></h3>
+        <ol>
+          <li><b>4.9</b><span>一杯热红酒的十二种讲法</span><small>1.8万评</small></li>
+          <li><b>4.8</b><span>老酒标里的城市记忆</span><small>1.1万评</small></li>
+          <li><b>4.8</b><span>夜色摄影入门</span><small>0.9万评</small></li>
+          <li><b>4.7</b><span>手织围巾的第一针</span><small>0.7万评</small></li>
+          <li><b>4.7</b><span>修表摊的最后一盏灯</span><small>0.6万评</small></li>
+        </ol>
+      </div>
+    </div>
+
+    <h3 style="margin-top:34px;font-size:20px;font-weight:800">社区短评</h3>
+    <div class="js91-grid js91-comments" style="margin-top:16px">
+      <div class="js91-comment">
+        <div class="js91-comment-top"><span class="js91-comment-dot" style="background:#e8842c">林</span>林间旧事 <time>11-21</time></div>
+        <div class="js91-stars">★★★★★</div>
+        <p>《夜醺·巷口》我看了两遍。第二遍专门关掉字幕,只听酒杯碰撞和老板说话的声音,那种真实感是演不出来的。</p>
+      </div>
+      <div class="js91-comment">
+        <div class="js91-comment-top"><span class="js91-comment-dot" style="background:#5d8fd0">北</span>北岸咖啡 <time>11-20</time></div>
+        <div class="js91-stars">★★★★☆</div>
+        <p>教程部分很实用,配方卡能下载这点特别加分。唯一的小建议是希望调色环节能再展开讲一点,新手容易卡在这里。</p>
+      </div>
+      <div class="js91-comment">
+        <div class="js91-comment-top"><span class="js91-comment-dot" style="background:#d64e6e">小</span>小满手作 <time>11-20</time></div>
+        <div class="js91-stars">★★★★★</div>
+        <p>作为刚入驻的创作者,最感动的是官方的试映反馈,编辑写了整整两页纸,连片尾字幕的节奏都给了建议。</p>
+      </div>
+      <div class="js91-comment">
+        <div class="js91-comment-top"><span class="js91-comment-dot" style="background:#6fae8a">陈</span>陈三页 <time>11-19</time></div>
+        <div class="js91-stars">★★★★★</div>
+        <p>影像档案计划那几组片子,拍的是我们这条街的修表摊,看完给爷爷打了个电话。这才是品牌该有的分量。</p>
+      </div>
+      <div class="js91-comment">
+        <div class="js91-comment-top"><span class="js91-comment-dot" style="background:#9d7be8">夜</span>夜班司机 <time>11-18</time></div>
+        <div class="js91-stars">★★★★☆</div>
+        <p>跑夜班的时候常看酒色91 的短片,时长刚好,不吵。希望首页能加个连续播放的开关,停车休息时更方便。</p>
+      </div>
+      <div class="js91-comment">
+        <div class="js91-comment-top"><span class="js91-comment-dot" style="background:#e8a93c">赵</span>赵小舟 <time>11-17</time></div>
+        <div class="js91-stars">★★★★★</div>
+        <p>年度投票我投了《深夜食堂的第六张桌子》。榜单没有广告味,这点很难得,希望一直保持。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S7 图文索引 + 企业动态 + 合作墙 -->
+<section class="js91-section" id="js91-index">
+  <div class="js91-wrap">
+    <span class="js91-eyebrow">Index · 图文索引</span>
+    <h2 class="js91-h2">酒色91 <em>图文索引</em>:用文字快速找到片单</h2>
+    <p class="js91-lead">不是所有观看都发生在有空的时候。以下索引提供内容摘要与标签,方便你先读后看。</p>
+
+    <div class="js91-index-list">
+      <article class="js91-index-item">
+        <div class="js91-index-media">
+          <img alt="图文索引《手织围巾的第一针》封面:毛线团与木质织针特写" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3e6d6'/%3E%3Ccircle cx='130' cy='150' r='60' fill='%23d9776a'/%3E%3Ccircle cx='130' cy='150' r='40' fill='%23e89a8e'/%3E%3Ccircle cx='130' cy='150' r='18' fill='%23c85a4c'/%3E%3Cg stroke='%238a6a4a' stroke-width='7' stroke-linecap='round'%3E%3Cpath d='M250 90v150M290 80v160'/%3E%3C/g%3E%3Cpath d='M180 200c30 20 60-10 90 6' stroke='%23c85a4c' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+        </div>
+        <div class="js91-index-body">
+          <h3>手织围巾的第一针:零基础也能完成的冬季手作</h3>
+          <p>起针、平针、收针三步拆解,附常见翻车原因与补救方法,材料清单可直接打印。</p>
+          <div class="js91-vtags"><span class="js91-tag">手作DIY</span><span class="js91-tag js91-tag-rose">教程干货</span></div>
+        </div>
+      </article>
+      <article class="js91-index-item">
+        <div class="js91-index-media">
+          <img alt="图文索引《清晨五点的早市》封面:菜场摊位与暖色灯泡" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23202a24'/%3E%3Crect x='0' y='170' width='400' height='130' fill='%233a473c'/%3E%3Cg%3E%3Crect x='40' y='110' width='90' height='70' rx='4' fill='%23e8c07a' opacity='.85'/%3E%3Crect x='160' y='120' width='80' height='60' rx='4' fill='%23d98f5e' opacity='.8'/%3E%3Crect x='270' y='112' width='90' height='68' rx='4' fill='%238fbf9a' opacity='.8'/%3E%3C/g%3E%3Ccircle cx='200' cy='60' r='40' fill='%23ffe9b0' opacity='.35'/%3E%3Ccircle cx='200' cy='60' r='12' fill='%23ffe9b0'/%3E%3C/svg%3E">
+        </div>
+        <div class="js91-index-body">
+          <h3>清晨五点的早市:一座城市最早醒来的地方</h3>
+          <p>跟拍三位摊主从卸货到收摊的全过程,记录价格、方言与照顾熟客的小动作。</p>
+          <div class="js91-vtags"><span class="js91-tag">在地文化</span><span class="js91-tag">城市探索</span></div>
+        </div>
+      </article>
+      <article class="js91-index-item">
+        <div class="js91-index-media">
+          <img alt="图文索引《修表摊的最后一盏灯》封面:老式修表工作台与放大镜" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%232b2a33'/%3E%3Crect x='40' y='150' width='320' height='16' rx='4' fill='%235c4a38'/%3E%3Crect x='70' y='166' width='20' height='90' fill='%23483a2c'/%3E%3Crect x='310' y='166' width='20' height='90' fill='%23483a2c'/%3E%3Ccircle cx='200' cy='110' r='46' fill='none' stroke='%23d9b878' stroke-width='6'/%3E%3Ccircle cx='200' cy='110' r='30' fill='%23f5e6c8' opacity='.2'/%3E%3Cpath d='M200 90v22l14 8' stroke='%23d9b878' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='120' cy='130' r='14' fill='%23a33a4a' opacity='.8'/%3E%3C/svg%3E">
+        </div>
+        <div class="js91-index-body">
+          <h3>修表摊的最后一盏灯:一位手艺人四十年的坚持</h3>
+          <p>访谈与实拍结合,讲述修表师傅的工具、客人以及他对时间的理解。</p>
+          <div class="js91-vtags"><span class="js91-tag">人物访谈</span><span class="js91-tag js91-tag-rose">品牌故事</span></div>
+        </div>
+      </article>
+      <article class="js91-index-item">
+        <div class="js91-index-media">
+          <img alt="图文索引《手机夜景的三个误区》封面:手机屏幕与夜间街景" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23181d2e'/%3E%3Crect x='130' y='50' width='140' height='200' rx='16' fill='%230e1220' stroke='%234a5a7a' stroke-width='4'/%3E%3Crect x='146' y='70' width='108' height='150' rx='6' fill='%232a3450'/%3E%3Ccircle cx='200' cy='140' r='26' fill='%23ffd77a' opacity='.8'/%3E%3Cg fill='%23ffd77a' opacity='.5'%3E%3Crect x='158' y='180' width='10' height='28'/%3E%3Crect x='174' y='168' width='10' height='40'/%3E%3Crect x='190' y='190' width='10' height='18'/%3E%3C/g%3E%3Ccircle cx='80' cy='90' r='18' fill='%23d64e6e' opacity='.5'/%3E%3Ccircle cx='320' cy='200' r='24' fill='%236fae8a' opacity='.4'/%3E%3C/svg%3E">
+        </div>
+        <div class="js91-index-body">
+          <h3>手机夜景的三个误区:不是越亮越好</h3>
+          <p>对比实拍说明曝光、噪点与色温的关系,给出三套可复现的手机参数。</p>
+          <div class="js91-vtags"><span class="js91-tag">实用技巧</span><span class="js91-tag">深度测评</span></div>
+        </div>
+      </article>
+    </div>
+
+    <h3 style="margin-top:38px;font-size:20px;font-weight:800">企业动态 · 官方发布</h3>
+    <div class="js91-news">
+      <div class="js91-news-item">
+        <div class="js91-news-date">11-22</div>
+        <div><h3>冬酿影像计划第三期上线,新增十二支高清原创短片</h3><p>本期同步开放专题追更与片单下载,观众可在官网首页直接进入专题页。</p></div>
+      </div>
+      <div class="js91-news-item">
+        <div class="js91-news-date">11-18</div>
+        <div><h3>酒色91 与三地文化机构签署影像档案合作</h3><p>合作将覆盖地方手艺人、小店主与社区工作者,首批记录计划于十二月启动。</p></div>
+      </div>
+      <div class="js91-news-item">
+        <div class="js91-news-date">11-12</div>
+        <div><h3>创作者工作坊第七期开放报名</h3><p>本期主题为「低照度环境下的声音采集」,由官方后期团队主讲,限额三十人。</p></div>
+      </div>
+      <div class="js91-news-item">
+        <div class="js91-news-date">11-05</div>
+        <div><h3>年度口碑投票正式启动</h3><p>投票完全由用户行为决定,不设商业加权,结果将于十二月中旬在官网公布。</p></div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:38px;font-size:20px;font-weight:800">合作品牌与伙伴</h3>
+    <div class="js91-partners">
+      <div class="js91-partner">拾光影像<span>器材支持</span></div>
+      <div class="js91-partner">南岸书店<span>场地合作</span></div>
+      <div class="js91-partner">慢火餐具<span>道具合作</span></div>
+      <div class="js91-partner">城市文化馆<span>档案共建</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 投稿 CTA + FAQ -->
+<section class="js91-section" id="js91-submit">
+  <div class="js91-wrap">
+    <div class="js91-cta">
+      <div>
+        <h2>把你的片子交给酒色91</h2>
+        <p>无论是一支十分钟的纪录片,还是一段三分钟的生活记录,只要有真实的表达与完整的信息,都欢迎投稿。官方编辑会在七个工作日内给出反馈。</p>
+      </div>
+      <div class="js91-cta-btns">
+        <button class="js91-btn js91-btn-primary" id="js91-cta-submit">提交作品</button>
+        <button class="js91-btn js91-btn-ghost" id="js91-cta-guide">创作攻略</button>
+      </div>
+    </div>
+
+    <div id="js91-faq" style="margin-top:42px">
+      <span class="js91-eyebrow">FAQ · 帮助中心</span>
+      <h2 class="js91-h2">酒色91 <em>常见问题</em></h2>
+      <div class="js91-faq">
+        <details>
+          <summary>酒色91 官网的内容都是原创正版吗?</summary>
+          <p>是的。官网展示的短片均经过来源核验,官方原创与签约创作者作品会标注来源与制作名单,社区投稿作品需提交版权声明,平台对侵权内容零容忍。</p>
+        </details>
+        <details>
+          <summary>投稿需要满足哪些基本条件?</summary>
+          <p>画面稳定、声音清楚、信息真实、来源可查是四条底线。时长建议三到十五分钟,分辨率不低于 1080p,涉及酒类内容需在片头加入理性饮用提示。</p>
+        </details>
+        <details>
+          <summary>投稿后多久能收到反馈?</summary>
+          <p>官方编辑会在七个工作日内给出初审反馈,若进入试映环节,会额外邀请您参加一次线上反馈会,整个过程不收取任何费用。</p>
+        </details>
+        <details>
+          <summary>创作者可以获得哪些支持?</summary>
+          <p>包括选题库与行业简报、设备与场地共享、剪辑调色工作坊,以及版权与合同咨询。表现稳定的创作者可申请签约,获得专题共创机会。</p>
+        </details>
+        <details>
+          <summary>年度口碑投票是如何计算的?</summary>
+          <p>投票结果基于用户真实观看、收藏、评分与投票行为的综合计算,不设商业加权,也不售卖榜单位置,结果与明细会在官网公开。</p>
+        </details>
+        <details>
+          <summary>可以下载视频离线观看吗?</summary>
+          <p>官方原创与签约作品中标注「支持下载」的条目可提供高清下载,下载内容仅限个人观看,不得二次剪辑、转载或商用。</p>
+        </details>
+        <details>
+          <summary>如何举报不当内容或反馈问题?</summary>
+          <p>每条内容下方都有举报入口,也可通过官网底部的联系邮箱提交。官方承诺在四十八小时内响应,并对举报人信息保密。</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S8 页脚 -->
+<footer class="js91-footer">
+  <div class="js91-wrap">
+    <div class="js91-footer-grid">
+      <div>
+        <div class="js91-footer-brand">酒色91<small>OFFICIAL VIDEO PORTAL</small></div>
+        <p style="font-size:13px;color:#c4aec0;max-width:34ch">酒色91 官方网站,专注原创高清视频内容与创作者社区,深耕影像表达,持续运营中。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="#js91-featured">精选视频</a></li>
+          <li><a href="#js91-topics">专题企划</a></li>
+          <li><a href="#js91-creators">创作者</a></li>
+          <li><a href="#js91-voices">口碑榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#js91-submit">投稿入口</a></li>
+          <li><a href="#js91-faq">帮助中心</a></li>
+          <li><a href="#js91-index">企业动态</a></li>
+          <li><a href="#js91-parse">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li>合作邮箱:hello@js91.example</li>
+          <li>投稿咨询:submit@js91.example</li>
+          <li>内容举报:report@js91.example</li>
+          <li>工作时间:周一至周五 10:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="js91-footer-bottom">
+      <span>© 2019–2026 酒色91 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号:京ICP备 2026009188 号 · 品牌内容生态与原创保护计划成员</span>
+    </div>
+  </div>
+</footer>
+
+<button class="js91-top" id="js91-top" aria-label="回到顶部">↑</button>
+<div class="js91-toast" id="js91-toast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="js91-modal" id="js91-modal-submit" role="dialog" aria-modal="true" aria-labelledby="js91-modal-title">
+  <div class="js91-modal-card">
+    <button class="js91-modal-close" data-close aria-label="关闭">✕</button>
+    <h3 id="js91-modal-title">提交作品给酒色91</h3>
+    <p>填写基本信息,官方编辑将在七个工作日内联系你。请确保作品为原创且无版权争议。</p>
+    <label class="js91-field">作品标题
+      <input type="text" id="js91-field-title" placeholder="例如:巷子尽头的灯">
+    </label>
+    <label class="js91-field">联系邮箱
+      <input type="email" id="js91-field-mail" placeholder="用于接收反馈">
+    </label>
+    <label class="js91-field">作品简介
+      <textarea rows="3" id="js91-field-desc" placeholder="内容方向、时长、拍摄设备与亮点"></textarea>
+    </label>
+    <button class="js91-btn js91-btn-primary" id="js91-modal-send" style="width:100%;justify-content:center">确认提交</button>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="js91-modal" id="js91-modal-share" role="dialog" aria-modal="true" aria-labelledby="js91-share-title">
+  <div class="js91-modal-card">
+    <button class="js91-modal-close" data-close aria-label="关闭">✕</button>
+    <h3 id="js91-share-title">分享给同好</h3>
+    <p>选择你常用的平台,把酒色91 的短片推荐出去。</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+      <button class="js91-btn js91-btn-ghost" data-share-item="微信">微信</button>
+      <button class="js91-btn js91-btn-ghost" data-share-item="微博">微博</button>
+      <button class="js91-btn js91-btn-ghost" data-share-item="QQ">QQ</button>
+      <button class="js91-btn js91-btn-ghost" data-share-item="复制链接">复制链接</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var toastEl = document.getElementById('js91-toast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('js91-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('js91-show'); }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('js91-burger');
+  var nav = document.getElementById('js91-nav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('js91-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('js91-open');
+      burger.setAttribute('aria-expanded','false');
+      burger.textContent = '☰';
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('js91-search-form');
+  var searchInput = document.getElementById('js91-search-input');
+  var searchFeedback = document.getElementById('js91-search-feedback');
+  var searchMap = [
+    {keys:['夜醺','酒馆','巷口'], msg:'找到 1 条重点内容:《夜醺·巷口:一家开了 17 年的小酒馆》,已定位到焦点推荐。'},
+    {keys:['教程','配方','特调','热红酒'], msg:'找到 3 条教程内容:《一杯热红酒的十二种讲法》《玻璃杯里的四季》《手织围巾的第一针》。'},
+    {keys:['摄影','夜景','布光','光影'], msg:'找到 2 条光影内容:《夜色摄影入门》《手机夜景的三个误区》。'},
+    {keys:['作者','创作者','阿岚','访谈'], msg:'找到 6 位创作者,包括巷口阿岚、夜航小舟、一页录等,可在创作者矩阵查看。'},
+    {keys:['专题','冬酿','小店'], msg:'找到 4 个专题企划,推荐从「冬酿影像计划 · 第三期」开始浏览。'},
+    {keys:['投稿','报名','上传'], msg:'投稿入口位于页面下方,提交后七个工作日内收到官方编辑反馈。'}
+  ];
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    if(!q){ searchFeedback.textContent = '请输入片名、创作者或专题关键词,例如「夜醺」「教程」「专题」。'; return; }
+    var hit = null;
+    for(var i=0;i<searchMap.length;i++){
+      for(var j=0;j<searchMap[i].keys.length;j++){
+        if(q.indexOf(searchMap[i].keys[j]) !== -1){ hit = searchMap[i]; break; }
+      }
+      if(hit) break;
+    }
+    if(hit){ searchFeedback.textContent = '关于「' + q + '」:' + hit.msg; }
+    else { searchFeedback.textContent = '暂未匹配到「' + q + '」的直接结果,可尝试「夜醺」「教程」「创作者」「专题」等关键词。'; }
+  });
+
+  /* 点赞与收藏 */
+  function formatCount(n){
+    if(n >= 10000){ return (n/10000).toFixed(1).replace(/\.0$/,'') + '万'; }
+    return String(n);
+  }
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-like]');
+    if(likeBtn){
+      var base = parseInt(likeBtn.getAttribute('data-like'), 10) || 0;
+      var span = likeBtn.querySelector('.js91-like-count');
+      var liked = likeBtn.classList.toggle('js91-liked');
+      var val = liked ? base + 1 : base;
+      if(span){ span.textContent = formatCount(Math.round(val/10) * 10 >= base ? Math.round(val/10)*10 : val); }
+      toast(liked ? '已点赞,感谢支持酒色91' : '已取消点赞');
+      return;
+    }
+    var favBtn = e.target.closest('[data-fav]');
+    if(favBtn){
+      var on = favBtn.classList.toggle('js91-on');
+      var txt = favBtn.textContent.replace(/^[☆★]\s*/, '');
+      favBtn.textContent = (on ? '★ ' : '☆ ') + txt;
+      toast(on ? '已加入收藏,可在个人页查看' : '已取消收藏');
+      return;
+    }
+    var copyBtn = e.target.closest('[data-copy]');
+    if(copyBtn){
+      var link = '酒色91 官方网站 · 精选内容';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ toast('链接已复制'); }).catch(function(){ toast('复制失败,请手动选择'); });
+      } else { toast('链接已准备好,可长按复制'); }
+      return;
+    }
+    var shareBtn = e.target.closest('[data-share]');
+    if(shareBtn){ openModal('js91-modal-share'); return; }
+    var shareItem = e.target.closest('[data-share-item]');
+    if(shareItem){
+      var name = shareItem.getAttribute('data-share-item');
+      if(name === '复制链接'){
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText('酒色91 官方网站 · 精选内容').then(function(){ toast('链接已复制'); });
+        } else { toast('链接已准备好,可长按复制'); }
+      } else {
+        toast('已唤起 ' + name + ' 分享面板');
+      }
+      closeModal('js91-modal-share');
+      return;
+    }
+    if(e.target.closest('[data-close]')){ closeModal(e.target.closest('.js91-modal').id); return; }
+    if(e.target.classList.contains('js91-modal')){ closeModal(e.target.id); return; }
+  });
+
+  /* 弹窗 */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.add('js91-show'); document.body.style.overflow = 'hidden'; }
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.remove('js91-show'); document.body.style.overflow = ''; }
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.js91-modal.js91-show').forEach(function(m){ m.classList.remove('js91-show'); });
+      document.body.style.overflow = '';
+    }
+  });
+
+  /* 投稿入口 */
+  var submitBtns = [
+    document.getElementById('js91-cta-submit'),
+    document.getElementById('js91-hero-submit')
+  ];
+  submitBtns.forEach(function(b){
+    if(b){ b.addEventListener('click', function(){ openModal('js91-modal-submit'); }); }
+  });
+  document.getElementById('js91-cta-guide').addEventListener('click', function(){
+    var el = document.getElementById('js91-parse');
+    if(el){ el.scrollIntoView({behavior:'smooth'}); }
+    toast('已为你定位到创作方法论');
+  });
+  document.getElementById('js91-modal-send').addEventListener('click', function(){
+    var t = document.getElementById('js91-field-title').value.trim();
+    var m = document.getElementById('js91-field-mail').value.trim();
+    if(!t || !m){ toast('请填写作品标题与联系邮箱'); return; }
+    closeModal('js91-modal-submit');
+    toast('提交成功,官方编辑将在七个工作日内反馈');
+    document.getElementById('js91-field-title').value = '';
+    document.getElementById('js91-field-mail').value = '';
+    document.getElementById('js91-field-desc').value = '';
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('js91-top');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600){ topBtn.classList.add('js91-show'); }
+    else { topBtn.classList.remove('js91-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+})();
+</script>
+</body>
+            </html>
